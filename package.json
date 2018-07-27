@@ -12,7 +12,7 @@
     "node": ">=4"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "transform": {".*": "<rootDir>/node_modules/babel-jest"},
     "unmockedModulePathPatterns": [
       "core-js/.*"
     ]
@@ -31,7 +31,7 @@
     "express": "^4.13.3",
     "flow-bin": "^0.60.1",
     "github": "^7.3.2",
-    "jest-cli": "^0.7.1",
+    "jest-cli": "^23.4.1",
     "jsonlint": "^1.6.2",
     "minimatch": "^3.0.0",
     "node-schedule": "^1.0.0"
